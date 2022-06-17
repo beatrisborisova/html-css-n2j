@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500&display=swap');
+
+body {
+    width: 1110px;
+    margin: auto;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #69707D;
+    align-items: center;
+}
+
+nav div, nav ul {
+    display: flex;
+}
+
+.logo-menus {
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #69707D;
+}
+
+nav ul li a:active {
+    border-bottom: 3px solid #FF7E1B;
+    padding-bottom: 25px;
+}
+
+#image-wrapper-avatar {
+    width: 40px;
+}
+
+#image-wrapper-avatar img:active {
+    border: 2px solid #FF7E1B;
+    border-radius: 50%;
+    width: 36px;
+}
+
+.my-cart {
+    display: none;
+}
+
+/* #image-wrapper-avatar:active+.my-cart { */
+#image-wrapper-avatar+.my-cart {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    right: -45px;
+    top: 100%;
+    width: 300px;
+    font-weight: bold;
+}
+
+.cart-title {
+    padding: 20px;
+    border-bottom: 1px solid #E4E9F2;
+}
+
+.cart-content-empty {
+    justify-content: center;
+    padding: 20%;
+    color: #69707D;
+}
+
+.image-wrapper-cart {
+    width: 70px;
+}
+
+.cart-info {
+    display: block;
+    font-weight: 100;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.cart-content-filled {
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+#checkout-btn {
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF7E1B;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    width: 350px;
+}
+
+#image-wrapper-logo {
+    width: 115px;
+    height: 20px;
+}
+
+.image-wrapper img, .image-wrapper-thumbnail img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image-wrapper-thumbnail img:active {
+    opacity: 0.5;
+}
+
+#first {
+    border-radius: 10px;
+    height: 80px;
+    border: 2px solid #FF7E1B;
+}
+
+#first img {
+    opacity: 0.4;
+}
+
+.image-wrapper-thumbnail {
+    width: 80px;
+}
+
+#tumbnails-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ul-avatar {
+    align-items: center;
+    position: relative;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    margin: 50px
+}
+
+.product-info {
+    margin: 50px 100px;
+    width: 350px;
+}
+
+.product-info h5 {
+    text-transform: uppercase;
+    color: #FF7E1B;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.product-info p {
+    color: #69707D;
+}
+
+.product-info #price-with-disc {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.product-info #disc {
+    background: #FFEEE2;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #FF7E1B;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.product-info #price {
+    color: #B6BCC8;
+    text-decoration: line-through;
+    margin: 10px 0 20px 0;
+}
+
+#buttons {
+    display: flex;
+}
+
+#add-remove {
+    background-color: #E4E9F2;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#add-remove button:active {
+    opacity: 0.5;
+}
+
+.quantity-btn {
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#minus:hover, #plus:hover {
+    cursor: pointer;
+}
+
+#add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #FF7E1B;
+    border: none;
+    width: 100%;
+    box-shadow: 0px 8px 14px 0px rgba(255, 126, 27, 0.61);
+}
+
+#add-to-cart:active {
+    opacity: 0.5;
+}
+
+#add-to-cart p {
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#add-to-cart:hover {
+    cursor: pointer;
+}
+
+#disc-container {
+    display: flex;
+}
