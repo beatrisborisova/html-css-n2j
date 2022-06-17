@@ -16,25 +16,43 @@
 
 <body>
 
+
     <nav>
         <div class="logo-menus">
 
             <div id="image-wrapper-logo">
                 <img src="../../images/logo.svg" alt="logo">
             </div>
-            <ul>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+
+            <div class="navs-container">
+
+                <div class="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
+                        <path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd" />
+                    </svg>
+                </div>
+
+                <ul>
+                    <div class="lightbox-product-images-svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" class="nav-exit">
+                            <path
+                                d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                                fill="#69707D" fill-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
 
 
         </div>
         <div>
-            <ul id="ul-avatar">
-                <li class="icon-cart"><img src="../../images/icon-cart.svg" alt="icon-cart"></li>
+            <div id="ul-avatar">
+                <div class="icon-cart"><img src="../../images/icon-cart.svg" alt="icon-cart"></div>
                 <div class="my-cart">
                     <div class="cart-title">Cart</div>
                     <div class="cart-content-filled">
@@ -61,18 +79,31 @@
                         <button id="checkout-btn">Checkout</button>
                     </div>
                 </div>
-                <li id="image-wrapper-avatar">
+                <div id="image-wrapper-avatar">
                     <img src="../../images/image-avatar.png" alt="image-avatar">
-                </li>
-            </ul>
+                </div>
+            </div>
+
         </div>
     </nav>
 
-    <div class="product">
-        <div class="product-images">
-            <div class="image-wrapper" id="main-pro">
+    <main>
+        <div class="product">
+            <div class="product-images">
+                <div class="image-wrapper-before">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                        <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
+                    </svg>
+                </div>
                 <img src="../../images/image-product-1.jpg" alt="image-product-1">
+
+                <div class="image-wrapper-after">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                        <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
+                    </svg>
+                </div>
             </div>
+
             <div class="tumbnails-wrapper">
                 <div class="image-wrapper-thumbnail" id="first">
                     <img src="../../images/image-product-1-thumbnail.jpg">
@@ -110,6 +141,7 @@
                             <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
                         </svg>
                     </div>
+
                     <img src="../../images/image-product-1.jpg" alt="image-product-1">
 
                     <div class="image-wrapper-after">
@@ -144,12 +176,14 @@
                     sole,
                     they'll
                     withstand everything the weather can offer.</p>
-                <div id="disc-container">
-                    <div id="price-with-disc">$125.00</div>
-                    <div id="disc">50%</div>
-                </div>
+                <div class="pricing">
+                    <div class="disc-container">
+                        <div class="price-with-disc">$125.00</div>
+                        <div id="disc">50%</div>
+                    </div>
 
-                <div id="price">$250.00</div>
+                    <div id="price">$250.00</div>
+                </div>
             </div>
 
             <div id="buttons">
@@ -192,13 +226,8 @@
                 </button>
             </div>
         </div>
-    </div>
-
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+        </div>
+    </main>
 </body>
 
 </html>
