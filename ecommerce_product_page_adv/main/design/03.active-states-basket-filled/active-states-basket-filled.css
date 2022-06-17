@@ -89,12 +89,6 @@ nav ul li a:active {
     border-bottom: 1px solid #E4E9F2;
 }
 
-.cart-content-empty {
-    justify-content: center;
-    padding: 20%;
-    color: #69707D;
-}
-
 .image-wrapper-cart {
     width: 50px;
 }
