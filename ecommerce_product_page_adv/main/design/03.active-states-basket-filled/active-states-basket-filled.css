@@ -78,14 +78,14 @@ nav ul li a:active {
 }
 
 .image-wrapper-cart {
-    width: 70px;
+    width: 50px;
 }
 
 .cart-info {
     display: block;
     font-weight: 100;
     font-size: 13px;
-    padding-left: 5px;
+    padding: 0 10px;
 }
 
 .cart-content-filled {
@@ -93,6 +93,9 @@ nav ul li a:active {
     padding: 20px;
 }
 
+.cart-content-filled-main {
+    align-items: center;
+}
 
 #checkout-btn {
     margin: 20px auto;
