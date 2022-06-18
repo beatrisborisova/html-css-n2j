@@ -16,7 +16,7 @@
 
 <body>
   <header class="main-header">
-    <nav>
+    <nav class="nav-desktop">
       <div class="header-logo-image-wrapper">
         <img src="../main/images/logo.svg" alt="logo">
       </div>
@@ -28,6 +28,48 @@
         <li><a href="#">Support</a></li>
       </ul>
     </nav>
+
+    <nav class="nav-mobile">
+      <div class="header-logo-image-wrapper">
+        <img src="../main/images/logo.svg" alt="logo">
+      </div>
+
+      <div class="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+          <g fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="exit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+          <path
+            d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+            fill="#FFF" fill-rule="evenodd" />
+        </svg>
+      </div>
+
+      <div class="nav-mobile-content">
+
+        <div class="nav-mobile-header-container">
+          <div class="header-logo-image-wrapper">
+            <img src="../main/images/logo.svg" alt="logo">
+          </div>
+        </div>
+
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+
+    </nav>
+
     <h1>Immersive experiences that deliver</h1>
   </header>
 
@@ -49,75 +91,146 @@
     <section class="creations-section">
       <header class="section-header">
         <h2>Our creations</h2>
-        <button>See all</button>
+        <button class="see-btn">See all</button>
       </header>
       <main>
 
-        <article class="creations-section-article">
-          <a href="#">
-            <h3>Deep earth</h3>
-            <div class="article-image-wrapper">
-              <img src="../main/images/desktop/image-deep-earth.jpg" alt="deep-earth">
-            </div>
-          </a>
-        </article>
-        <article class="creations-section-article">
-          <a href="#">
-            <h3>Night arcade</h3>
-            <div class="article-image-wrapper">
-              <img src="../main/images/desktop/image-night-arcade.jpg" alt="night-arcade">
-            </div>
-          </a>
-        </article>
-        <article class="creations-section-article">
-          <a href="#">
-            <h3>Soccer team VR</h3>
-            <div class="article-image-wrapper">
-              <img src="../main/images/desktop/image-soccer-team.jpg" alt="soccer-team">
-            </div>
-          </a>
-        </article>
-        <article class="creations-section-article">
-          <a href="#">
-            <h3>The grid</h3>
-            <div class="article-image-wrapper">
-              <img src="../main/images/desktop/image-grid.jpg" alt="grid">
-            </div>
-          </a>
-        </article>
-        <article class="creations-section-article">
-          <a href="#">
-            <h3>From up above VR</h3>
-            <div class="article-image-wrapper">
-              <img src="../main/images/desktop/image-from-above.jpg" alt="from-above">
-            </div>
-          </a>
-        </article>
-        <article class="creations-section-article">
-          <a href="#">
-            <h3>Pocket borealis</h3>
-            <div class="article-image-wrapper">
-              <img src="../main/images/desktop/image-pocket-borealis.jpg" alt="pocket-borealis">
-            </div>
-          </a>
-        </article>
-        <article class="creations-section-article">
-          <a href="#">
-            <h3>The curiosity</h3>
-            <div class="article-image-wrapper">
-              <img src="../main/images/desktop/image-curiosity.jpg" alt="image-curiosity">
-            </div>
-          </a>
-        </article>
-        <article class="creations-section-article">
-          <a href="#">
-            <h3>Make it fisheye</h3>
-            <div class="article-image-wrapper">
-              <img src="../main/images/desktop/image-fisheye.jpg" alt="fisheye">
-            </div>
-          </a>
-        </article>
+        <div class="articles-desktop">
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Deep earth</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/desktop/image-deep-earth.jpg" alt="deep-earth">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Night arcade</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/desktop/image-night-arcade.jpg" alt="night-arcade">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Soccer team VR</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/desktop/image-soccer-team.jpg" alt="soccer-team">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>The grid</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/desktop/image-grid.jpg" alt="grid">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>From up above VR</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/desktop/image-from-above.jpg" alt="from-above">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Pocket borealis</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/desktop/image-pocket-borealis.jpg" alt="pocket-borealis">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>The curiosity</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/desktop/image-curiosity.jpg" alt="image-curiosity">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Make it fisheye</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/desktop/image-fisheye.jpg" alt="fisheye">
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="articles-mobile">
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Deep earth</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/mobile/image-deep-earth.jpg" alt="deep-earth">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Night arcade</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/mobile/image-night-arcade.jpg" alt="night-arcade">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Soccer team VR</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/mobile/image-soccer-team.jpg" alt="soccer-team">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>The grid</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/mobile/image-grid.jpg" alt="grid">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>From up above VR</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/mobile/image-from-above.jpg" alt="from-above">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Pocket borealis</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/mobile/image-pocket-borealis.jpg" alt="pocket-borealis">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>The curiosity</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/mobile/image-curiosity.jpg" alt="image-curiosity">
+              </div>
+            </a>
+          </article>
+          <article class="creations-section-article">
+            <a href="#">
+              <h3>Make it fisheye</h3>
+              <div class="article-image-wrapper">
+                <img src="../main/images/mobile/image-fisheye.jpg" alt="fisheye">
+              </div>
+            </a>
+          </article>
+        </div>
       </main>
+
+      <button class="btn-see-mobile">See all</button>
     </section>
   </main>
 
