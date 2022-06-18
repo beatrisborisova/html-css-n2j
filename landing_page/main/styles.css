@@ -40,7 +40,20 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
+    position: relative;
+    padding-bottom: 5px;
 }
+
+nav ul li a:active::before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid white;
+    left: 25%;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+}
+
 
 .main-header h1 {
     width: 30%;
@@ -104,11 +117,17 @@ nav ul li a {
 .section-header button {
     padding: 5px 20px;
     border: 1px solid hsl(0, 0%, 0%);
-    background: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
     text-transform: uppercase;
     font-size: 12px;
     outline: none;
     align-self: flex-end;
+    cursor: pointer;
+}
+
+.section-header button:active {
+    color: hsl(0, 0%, 100%);
+    background-color:  hsl(0, 0%, 0%);
 }
 
 .creations-section main {
@@ -132,6 +151,7 @@ nav ul li a {
     color: hsl(0, 0%, 100%);
     text-transform: uppercase;
     width: 70%;
+    z-index: 1;
 }
 
 .article-image-wrapper {
@@ -140,6 +160,15 @@ nav ul li a {
 
 .article-image-wrapper img {
     width: 100%;
+}
+
+.creations-section-article:active img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.creations-section-article:active h3 {
+    color: #000000;
 }
 
 
@@ -182,6 +211,10 @@ ul li i {
     color: hsl(0, 0%, 55%);
     font-family: 'Alata', sans-serif;
     font-weight: 400;
+}
+
+.footer-right ul li a:active {
+    border-bottom: 2px solid white;
 }
 
 
