@@ -15,7 +15,7 @@ body {
     background-image: url('../main/images/desktop/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
     padding: 50px;
 }
 
@@ -23,6 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     font-family: 'Alata', sans-serif;
+    font-weight: 400;
 }
 
 nav ul {
@@ -38,14 +39,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
 }
 
 .main-header h1 {
     width: 30%;
     margin: 100px;
     padding: 20px;
-    border: 2px solid #ffffff;
+    border: 2px solid hsl(0, 0%, 100%);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
     font-weight: 300;
@@ -62,13 +63,14 @@ nav ul li a {
     position: relative;
     width: 70%;
     margin: 120px auto;
+    color: hsl(0, 0%, 41%);
 }
 
 .leader-section-content {
     padding: 70px;
     font-family: 'Josefin Sans', sans-serif;
     width: 300px;
-    background-color: #ffffff;
+    background-color: hsl(0, 0%, 100%);
     position: absolute;
     right: 290px;
     bottom: -80px;
@@ -87,6 +89,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     margin: 0 30px;
+    color: hsl(0, 0%, 41%);
 }
 
 .section-header h2 {
@@ -100,8 +103,8 @@ nav ul li a {
 
 .section-header button {
     padding: 5px 20px;
-    border: 1px solid #000000;
-    background: #ffffff;
+    border: 1px solid hsl(0, 0%, 0%);
+    background: hsl(0, 0%, 100%);
     text-transform: uppercase;
     font-size: 12px;
     outline: none;
@@ -126,7 +129,7 @@ nav ul li a {
     position: absolute;
     left: 30px;
     bottom: 10px;
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
     text-transform: uppercase;
     width: 70%;
 }
@@ -143,6 +146,8 @@ nav ul li a {
 /* FOOTER */
 
 footer {
+    font-family: 'Josefin Sans', sans-serif;
+
     display: flex;
     justify-content: space-between;
     background-color: hsl(0, 0%, 0%);
@@ -150,14 +155,15 @@ footer {
     padding: 30px 100px;
 }
 
-footer ul {
+.footer-right ul {
     padding: 0;
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
 }
 
 ul li i {
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
 }
 
 .footer-logo-image-wrapper {
@@ -167,5 +173,16 @@ ul li i {
 .footer-logo-image-wrapper img {
     width: 100%;
 }
+
+.footer-right ul li {
+    padding-left: 15px;
+}
+
+.footer-right p {
+    color: hsl(0, 0%, 55%);
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+}
+
 
 @media screen and (max-width: 375px) {}
