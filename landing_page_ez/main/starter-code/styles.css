@@ -15,6 +15,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
 }
 
 
@@ -128,6 +129,9 @@ footer {
     line-height: 26px;
 }
 
+.footer-text {
+    display: flex;
+}
 
 footer p {
     width: 350px;
@@ -142,5 +146,60 @@ footer p {
     body {
         max-width: 1000px;
         margin: 0 auto;
+    }
+}
+
+/* RESPONSIVE TABLET */
+
+@media screen and (max-width: 820px) {
+    body {
+        margin: 0;
+        padding: 50px;
+        background-image: url('../starter-code/assets/bg-main-tablet.png');
+    }
+
+    .nav-image {
+        top: -60px;
+        right: -50px;
+    }
+
+    .header-content {
+        max-width: 515px;
+    }
+
+    .header-content h1 {
+        font-size: 70px;
+        line-height: 70px;
+        margin: 0;
+    }
+
+    .header-content p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .article-premium {
+        top: 185px;
+        right: 115px;
+    }
+
+    .landing-image {
+        padding: 0 300px;
+    }
+
+    .image-wrapper-phone {
+        top: -140px;
+    }
+
+    footer {
+        align-items: flex-end;
+    }
+
+    .footer-text p {
+        margin: 20px 0 0 0;
+    }
+
+    .footer-text {
+        display: block;
     }
 }
