@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+    position: relative;
+    margin: 0 100px;
+    padding: 50px 250px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-image: url('../starter-code/assets/bg-main-desktop.png');
+    background-size: cover;
+}
+
+/* HEADER */
+
+.nav-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.header-content {
+    margin: 80px 0;
+    max-width: 870px;
+}
+
+.header-content h1 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+}
+
+.header-content p {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+/* MAIN */
+
+.landing-section {
+    background-color: #000000;
+    position: relative;
+    margin: 250px 0;
+    border-radius: 10px;
+}
+
+.landing-image {
+    padding: 30px 300px;
+}
+
+.image-wrapper-phone {
+    width: 280px;
+    position: absolute;
+    top: -150px;
+    left: 100px;
+}
+
+.image-wrapper-phone img {
+    width: 100%;
+}
+
+.article-premium {
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    background-color: #FA7453;
+    color: #FCFAF9;
+    width: 260px;
+    padding: 35px;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.article-premium h2 {
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.article-premium-buttons {
+    text-align: center;
+}
+
+.article-premium-pricing {
+    margin: 30px 0;
+}
+
+.article-premium-pricing span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.ios {
+    background-color: #191826;
+    color: #FCFAF9;
+}
+
+.ios:hover {
+    background-color: #66E2DC;
+}
+
+.android {
+    background-color: #FCFAF9;
+    color: #191826;
+}
+
+.android:hover {
+    background-color: #FFB964;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+footer p {
+    width: 350px;
+    margin: 0 210px 0 85px;
+}
+
+.footer-icons a {
+    padding: 5px;
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
