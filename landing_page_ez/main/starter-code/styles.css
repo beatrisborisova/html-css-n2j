@@ -211,6 +211,9 @@ footer p {
     body {
         padding: 0;
         background-image: url('../starter-code/assets/bg-main-mobile.png');
+        background-position-x: left;
+        background-position-y: center;
+        background-size: auto;
     }
 
     header {
@@ -239,7 +242,7 @@ footer p {
     .landing-image {
         padding: 0 10%;
     }
-    
+
     .image-wrapper-phone {
         width: 240px;
         top: -80px;
