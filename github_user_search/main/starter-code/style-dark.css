@@ -2,13 +2,13 @@
 
 body {
     margin: 0;
-    background-color: #F6F8FF;
+    background-color: #141D2F;
     font-family: 'Space Mono', monospace;
-    color: #4B6A9B;
+    color: #FFFFFF;
 }
 
 h1, h2 {
-    color: #2B3442;
+    color: #FFFFFF;
     margin: 0;
     font-size: 30px;
 }
@@ -34,15 +34,19 @@ h1, h2 {
     font-weight: 700;
 }
 
-.theme-container {
+.theme-container-dark {
     display: flex;
     align-items: flex-start;
     cursor: pointer;
 }
 
-.theme-container:hover, .theme-container:hover svg path {
-    color: #000000;
-    fill: #000000;
+.theme-container-dark:hover, .theme-container-dark:hover svg path {
+    color: #0079FF;
+    fill: #0079FF;
+}
+
+.theme-container-white {
+    display: none;
 }
 
 .theme-name {
@@ -60,7 +64,7 @@ h1, h2 {
     box-shadow: 0px 15px 15px 3px rgb(0 0 0 / 15%);
     border-radius: 15px;
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: #1E2A47;
 }
 
 .search-left * {
@@ -86,6 +90,7 @@ h1, h2 {
 .search-left input::placeholder {
     font-family: 'Space Mono', monospace;
     font-size: 18px;
+    color: #FFFFFF;
 }
 
 .search-right .no-results {
@@ -117,7 +122,7 @@ h1, h2 {
     box-shadow: 0px 15px 15px 3px rgb(0 0 0 / 15%);
     margin: auto;
     padding: 50px;
-    background-color: #FFFFFF;
+    background-color: #1E2A47;
     margin-top: 30px;
     border-radius: 15px;
 }
@@ -156,7 +161,8 @@ h1, h2 {
 
 .repos {
     display: flex;
-    background-color: #F6F8FF;
+    background-color: #141D2F;
+    color: #FFFFFF;
     justify-content: flex-start;
     border-radius: 10px;
     padding: 20px 35px;
@@ -170,7 +176,7 @@ h1, h2 {
 .repos div p:nth-child(2) {
     font-weight: 700;
     font-size: 30px;
-    color: #2B3442;
+    color: #FFFFFF;
 }
 
 .links {
@@ -274,5 +280,28 @@ h1, h2 {
         width: 100%;
     }
 
+    .avatar-image-wrapper {
+        width: 90px;
+        padding: 5px 0;
+    }
 
+    .personal {
+        width: 170px;
+        padding: 0 0 20px 10px;
+    }
+
+    .personal p {
+        margin-top: 0;
+        font-size: 13px;
+    }
+
+    .personal-info h2 {
+        font-size: 17px;
+    }
+
+    .personal-info p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    
 }

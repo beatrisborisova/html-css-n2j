@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #F6F8FF;
+    font-family: 'Space Mono', monospace;
+    color: #4B6A9B;
+}
+
+h1, h2 {
+    color: #2B3442;
+    margin: 0;
+    font-size: 30px;
+}
+
+.not-active {
+    color: #697C9A;
+    fill: #697C9A;
+}
+
+.main-container {
+    width: 980px;
+    margin: 50px auto;
+}
+
+.logo-and-theme {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo-and-theme .logo {
+    font-weight: 700;
+}
+
+.theme-container-white {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.theme-container-whtie:hover, .theme-container-white:hover svg path {
+    color: #000000;
+    fill: #000000;
+}
+
+.theme-container-dark {
+    display: none;
+}
+
+.theme-name {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-right: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 15px 15px 3px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+.search-left * {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-left label div {
+    padding: 15px;
+}
+
+.search-left input {
+    margin: 5px;
+    caret-color: #0079FF;
+    width: 400px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.search-left input::placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+}
+
+.search-right .no-results {
+    color: rgba(255, 0, 0, 0.692);
+    font-weight: 700;
+}
+
+.search-right button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    background-color: #0079FF;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+}
+
+.search-right button:hover {
+    opacity: 0.7;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0px 15px 15px 3px rgb(0 0 0 / 15%);
+    margin: auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.personal-desktop {
+    width: 700px;
+    max-width: 700px;
+}
+
+.personal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal .personal-info h2 {
+    margin: 0;
+}
+
+.personal .personal-info p {
+    margin-top: 0;
+    color: #0079FF;
+    font-size: 18px;
+}
+
+.avatar-image-wrapper {
+    width: 150px;
+    display: inline-flex;
+    background-color: #F6F8FF;
+    border-radius: 50%;
+    padding: 15px 0;
+}
+
+.avatar-image-wrapper img {
+    width: 100%;
+}
+
+.repos {
+    display: flex;
+    background-color: #F6F8FF;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 20px 35px;
+    gap: 25%;
+}
+
+.repos div p {
+    margin: 0;
+}
+
+.repos div p:nth-child(2) {
+    font-weight: 700;
+    font-size: 30px;
+    color: #2B3442;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.links p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.links-left, .links-right {
+    width: 50%;
+}
+
+.links-left div, .links-right div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .main-container {
+        max-width: 600px;
+    }
+
+    .no-results {
+        display: none;
+    }
+
+    .main-content {
+        display: block;
+        width: auto;
+        padding: 20px;
+    }
+
+    .personal {
+        display: inline-block;
+        vertical-align: top;
+        padding: 20px;
+    }
+
+    .personal-desktop {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .main-container {
+        width: auto;
+        max-width: 375px;
+        padding: 25px;
+        margin: 0;
+    }
+
+
+    .search-left label {
+        width: 50px;
+    }
+
+    .search-left label div {
+        padding: 0;
+    }
+
+    .search-left input {
+        margin: 0;
+    }
+
+    .search-left input::placeholder {
+        font-size: 12px;
+    }
+
+    .search-right button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .repos {
+        padding: 20px;
+        gap: 15%;
+        text-align: center;
+    }
+
+    .repos div p:nth-child(1) {
+        font-size: 12px;
+    }
+
+    .repos div p:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .links {
+        display: block;
+    }
+
+    .links-left, .links-right {
+        width: 100%;
+    }
+
+    .avatar-image-wrapper {
+        width: 90px;
+        padding: 5px 0;
+    }
+
+    .personal {
+        width: 170px;
+        padding: 0 0 20px 10px;
+    }
+
+    .personal p {
+        margin-top: 0;
+        font-size: 13px;
+    }
+
+    .personal-info h2 {
+        font-size: 17px;
+    }
+
+    .personal-info p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    
+}
