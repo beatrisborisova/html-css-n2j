@@ -87,12 +87,19 @@ h1, h2 {
     outline: none;
 }
 
-.search-left input::placeholder {
+.search-left input, .search-left input::placeholder {
     font-family: 'Space Mono', monospace;
     font-size: 18px;
 }
 
+.search-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .search-right .no-results {
+    display: none;
     color: rgba(255, 0, 0, 0.692);
     font-weight: 700;
 }
@@ -169,6 +176,10 @@ h1, h2 {
 
 .repos div p {
     margin: 0;
+}
+
+.repos div p:nth-child(1) {
+    color: #4B6A9B;
 }
 
 .repos div p:nth-child(2) {
@@ -301,5 +312,5 @@ h1, h2 {
         font-size: 13px;
         margin-bottom: 0;
     }
-    
+
 }

@@ -43,22 +43,27 @@ nav ul li a:active {
     padding-bottom: 25px;
 }
 
-#image-wrapper-avatar {
+.image-wrapper-avatar {
     width: 40px;
 }
 
-#image-wrapper-avatar img:active {
-    border: 2px solid #FF7E1B;
+.avatar-image {
+    border: 2px solid transparent;
     border-radius: 50%;
     width: 36px;
 }
 
-.my-cart {
+.active-avatar {
+    border: 2px solid #FF7E1B;
+}
+
+
+.cart-content-filled {
     display: none;
 }
 
-.icon-cart:active+.my-cart {
-    display: block;
+.my-cart {
+    display: none;
     background-color: #ffffff;
     box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.12);
     border-radius: 6px;
@@ -153,26 +158,24 @@ img {
     cursor: pointer;
 }
 
-.image-wrapper-thumbnail:active {
+/* .image-wrapper-thumbnail:active {
     background-color: rgba(255, 255, 255, 0.603);
     border-radius: 10px;
-}
+} */
 
-.image-wrapper-thumbnail:active img {
+.active-image-big {
     z-index: -1;
     opacity: 0.2;
-}
-
-#first {
+    background-color: rgba(255, 255, 255, 0.603);
     border-radius: 10px;
+
     height: 80px;
     border: 2px solid #FF7E1B;
-    background-color: rgba(255, 255, 255, 0.603);
+
 }
 
-#first img {
-    z-index: -1;
-    opacity: 0.2;
+.active-image-big img {
+    z-index: 3;
 }
 
 .image-wrapper-thumbnail {
@@ -204,8 +207,8 @@ img {
     display: none;
 }
 
-.product:active~.lightbox-product-images-container {
-    display: block;
+.lightbox-product-images-container {
+    display: none;
     width: 100%;
     background: #2b2929b0;
     position: absolute;
@@ -230,19 +233,17 @@ img {
     overflow: hidden;
 }
 
-.lightbox-product-images-container .image-wrapper-thumbnail:nth-child(1) {
+.active-image {
+    z-index: 1;
     border-radius: 10px;
     height: 60px;
     border: 2px solid #FF7E1B;
     background-color: rgba(255, 255, 255, 0.603);
 }
 
-
-.lightbox-product-images-container .image-wrapper-thumbnail:nth-child(1) img {
-    z-index: -1;
-    opacity: 0.2;
+.active-image img {
+    opacity: 0.5;
 }
-
 
 .lightbox-product-images .image-wrapper {
     position: relative;

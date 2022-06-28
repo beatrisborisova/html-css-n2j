@@ -87,13 +87,20 @@ h1, h2 {
     outline: none;
 }
 
-.search-left input::placeholder {
+.search-left input, .search-left input::placeholder {
     font-family: 'Space Mono', monospace;
     font-size: 18px;
     color: #FFFFFF;
 }
 
+.search-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .search-right .no-results {
+    display: none;
     color: rgba(255, 0, 0, 0.692);
     font-weight: 700;
 }
