@@ -293,7 +293,7 @@ ul li a {
     /* HEADER */
 
     .nav-desktop {
-        display: none
+        display: none;
     }
 
     .nav-mobile {
@@ -339,10 +339,6 @@ ul li a {
 
     .exit {
         display: none;
-    }
-
-    .hamburger:active+.exit {
-        display: block;
         position: absolute;
         background-color: black;
         color: #ffffff;
@@ -354,8 +350,8 @@ ul li a {
         text-align: center;
     }
 
-    .hamburger:active~.nav-mobile-content {
-        display: block;
+    .hamburger~.nav-mobile-content {
+        display: none;
         position: absolute;
         background-color: black;
         color: #ffffff;
@@ -367,7 +363,7 @@ ul li a {
         text-align: center;
     }
 
-    .hamburger:active~.nav-mobile-content ul {
+    .hamburger~.nav-mobile-content ul {
         display: block;
         background-color: black;
         text-align: start;
@@ -378,11 +374,12 @@ ul li a {
         font-weight: 300;
     }
 
-    .hamburger:active~.nav-mobile-content ul li {
+    .hamburger~.nav-mobile-content ul li {
         padding-bottom: 20px;
     }
 
-    .exit:active+.nav-mobile-content, .exit:active {
+
+    .exit .nav-mobile-content, .exit {
         display: none;
     }
 
