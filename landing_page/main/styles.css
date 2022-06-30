@@ -80,14 +80,14 @@ body {
 
 .main-header h1 {
     width: 30%;
-    margin: 100px 0 0 0 ;
+    margin: 100px 0 0 0;
     padding: 20px;
     border: 2px solid hsl(0, 0%, 100%);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 2px;    
+    letter-spacing: 2px;
     line-height: 50px;
 
 }
@@ -180,7 +180,7 @@ body {
 
 .creations-section-article {
     margin-bottom: 30px;
-    /* position: relative; */
+    position: relative;
 }
 
 .articles-desktop {
@@ -287,6 +287,7 @@ ul li a {
 
     .main-main {
         margin: 30px;
+        width: auto;
     }
 
     /* HEADER */
@@ -302,6 +303,11 @@ ul li a {
     .main-header {
         padding: 50px 20px;
         background-image: url('../main/images/mobile/image-hero.jpg');
+    }
+
+    .main-header-container {
+        width: auto;
+        margin: 0;
     }
 
     .main-header ul {
@@ -452,10 +458,12 @@ ul li a {
 
     /* FOOTER */
 
-    footer {
+    .footer-container {
         flex-direction: column;
         align-items: center;
         padding: 40px;
+        margin: 0;
+        width: auto;
     }
 
     .footer-left nav {
