@@ -6,8 +6,8 @@ body {
 }
 
 .main-main {
-    width: 80%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 100px auto;
 }
 
 /* HEADER */
@@ -20,13 +20,19 @@ body {
     padding: 50px;
 }
 
+
+.main-header-container {
+    width: 53%;
+    margin: 0 auto;
+}
+
 .hamburger {
     display: none;
 }
 
 /* NAVIGATIONS */
 
-.nav-desktop, .nav-mobile{
+.nav-desktop, .nav-mobile {
     display: flex;
     justify-content: space-between;
     font-family: 'Alata', sans-serif;
@@ -74,14 +80,16 @@ body {
 
 .main-header h1 {
     width: 30%;
-    margin: 100px;
+    margin: 100px 0 0 0 ;
     padding: 20px;
     border: 2px solid hsl(0, 0%, 100%);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 2px;    
+    line-height: 50px;
+
 }
 
 
@@ -91,8 +99,8 @@ body {
     display: flex;
     align-items: end;
     position: relative;
-    width: 70%;
-    margin: 120px auto;
+    /* width: 70%;
+    margin: 120px auto; */
     color: hsl(0, 0%, 41%);
 }
 
@@ -102,8 +110,8 @@ body {
     width: 300px;
     background-color: hsl(0, 0%, 100%);
     position: absolute;
-    right: 290px;
-    bottom: -80px;
+    bottom: -30px;
+    right: 100px;
 }
 
 .leader-section-content h2 {
@@ -126,7 +134,7 @@ body {
 .section-header {
     display: flex;
     justify-content: space-between;
-    margin: 0 30px;
+    margin: 50px 0 0 0;
     color: hsl(0, 0%, 41%);
 }
 
@@ -171,13 +179,15 @@ body {
 }
 
 .creations-section-article {
-    margin: 30px;
-    position: relative;
+    margin-bottom: 30px;
+    /* position: relative; */
 }
 
 .articles-desktop {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .creations-section-article h3 {
@@ -216,11 +226,17 @@ body {
 footer {
     font-family: 'Josefin Sans', sans-serif;
 
-    display: flex;
-    justify-content: space-between;
+
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
     padding: 30px 100px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 footer ul {
@@ -368,7 +384,6 @@ ul li a {
         margin: 0 auto;
         display: block;
         width: 100%;
-
     }
 
     .leader-section-image-wrapper {
