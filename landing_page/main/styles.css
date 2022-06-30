@@ -6,7 +6,8 @@ body {
 }
 
 .main-main {
-    margin: 100px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -23,36 +24,44 @@ body {
     display: none;
 }
 
-.nav-mobile {
-    display: none;
-}
+/* NAVIGATIONS */
 
-.nav-desktop, .nav-mobile {
+.nav-desktop, .nav-mobile{
     display: flex;
     justify-content: space-between;
     font-family: 'Alata', sans-serif;
     font-weight: 400;
 }
 
-.nav-desktop ul, .nav-mobile ul {
+.footer-nav {
+    justify-content: space-between;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-desktop ul, .nav-mobile ul, .footer-nav ul {
     margin: 0;
     list-style-type: none;
     display: flex;
     padding: 0;
 }
 
-.nav-desktop ul li, .nav-mobile ul li {
+.nav-desktop ul li, .nav-mobile ul li, .footer-nav ul li {
     padding: 10px 20px 10px 0;
 }
 
-.nav-desktop ul li a, .nav-mobile ul li a {
+.nav-desktop ul li a, .nav-mobile ul li a, .footer-nav ul li a {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     position: relative;
     padding-bottom: 5px;
 }
 
-.nav-desktop ul li a:active::before {
+.nav-desktop ul li a:hover::before, .footer-nav ul li a:hover::before {
     content: '';
     position: absolute;
     border-bottom: 2px solid white;
@@ -141,7 +150,7 @@ body {
     cursor: pointer;
 }
 
-.section-header .see-btn:active {
+.section-header .see-btn:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(0, 0%, 0%);
 }
@@ -164,6 +173,11 @@ body {
 .creations-section-article {
     margin: 30px;
     position: relative;
+}
+
+.articles-desktop {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .creations-section-article h3 {
@@ -209,14 +223,15 @@ footer {
     padding: 30px 100px;
 }
 
-.footer-right ul {
+footer ul {
     padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
 }
 
-ul li i {
+
+ul li a {
     color: hsl(0, 0%, 100%);
 }
 
@@ -238,7 +253,7 @@ ul li i {
     font-weight: 400;
 }
 
-.footer-right ul li a:active {
+.footer-right ul li a:hover {
     border-bottom: 2px solid white;
 }
 
