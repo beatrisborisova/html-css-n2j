@@ -21,6 +21,7 @@ const cartContentEmpty = document.querySelector('.cart-content');
 const cartContentFilled = document.querySelector('.cart-content-filled');
 const productImagesContainer = document.querySelector('.lightbox-product-images-container');
 const mainImageLight = document.querySelector('.main-image-light');
+const pseudoNumber = document.querySelector('.icon-cart::after');
 
 let quantity = document.getElementById('quantity');
 let isCartShown = false;
@@ -47,6 +48,7 @@ function addToCart() {
         count.textContent = quantity.textContent;
         const price = (125 * Number(quantity.textContent)).toFixed(2);
         total.textContent = `$${price}`;
+        pseudoNumber.content = quantity.textContent;
     }
 }
 
