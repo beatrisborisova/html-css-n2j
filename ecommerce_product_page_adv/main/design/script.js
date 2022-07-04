@@ -4,6 +4,9 @@ document.body.addEventListener('click', (e) => {
     } else {
         document.querySelector('.avatar-image').classList.remove('active-avatar')
     }
+
+
+
 })
 
 document.getElementById('add-remove').addEventListener('click', addRemove);
@@ -21,7 +24,7 @@ const cartContentEmpty = document.querySelector('.cart-content');
 const cartContentFilled = document.querySelector('.cart-content-filled');
 const productImagesContainer = document.querySelector('.lightbox-product-images-container');
 const mainImageLight = document.querySelector('.main-image-light');
-const pseudoNumber = document.querySelector('.icon-cart::after');
+const pseudoNumberContainer = document.querySelector('.icon-cart');
 
 let quantity = document.getElementById('quantity');
 let isCartShown = false;
@@ -38,17 +41,17 @@ function addRemove(e) {
         counter++;
     }
 
-    quantity.textContent = counter;
+    quantity.value = counter;
 }
 
 function addToCart() {
     if (counter > 0) {
         cartContentEmpty.style.display = 'none';
         cartContentFilled.style.display = 'block';
-        count.textContent = quantity.textContent;
-        const price = (125 * Number(quantity.textContent)).toFixed(2);
+        count.textContent = quantity.value;
+        const price = (125 * Number(quantity.value)).toFixed(2);
         total.textContent = `$${price}`;
-        pseudoNumber.content = quantity.textContent;
+        pseudoNumberContainer.title = `${quantity.value}`;
     }
 }
 
