@@ -4,19 +4,16 @@ document.body.addEventListener('click', (e) => {
     } else {
         document.querySelector('.avatar-image').classList.remove('active-avatar')
     }
-
-
-
 })
 
 document.getElementById('add-remove').addEventListener('click', addRemove);
 document.getElementById('add-to-cart').addEventListener('click', addToCart);
 
-
 document.querySelector('.icon-cart').addEventListener('click', showCart);
 document.querySelector('.bin').addEventListener('click', removeItemFromCart);
 document.querySelector('.main-image').addEventListener('click', toggleImage);
 document.querySelector('.tumbnails-wrapper').addEventListener('click', showImage);
+document.querySelector('.navs-container').addEventListener('click', toggleMobileNav);
 
 const count = document.getElementById('count');
 const total = document.getElementById('total');
@@ -28,6 +25,7 @@ const pseudoNumberContainer = document.querySelector('.icon-cart');
 
 let quantity = document.getElementById('quantity');
 let isCartShown = false;
+let isMobileNavOpened = false;
 let counter = 0;
 
 function addRemove(e) {
@@ -128,4 +126,14 @@ function showImage(e) {
         e.target.parentElement.classList.add('active-image-big')
     }
 
+}
+
+function toggleMobileNav() {
+    if (!isMobileNavOpened) {
+        document.querySelector('.navs-container-ul').style.display = 'block';
+        isMobileNavOpened = true;
+    } else {
+        document.querySelector('.navs-container-ul').style.display = 'none';
+        isMobileNavOpened = false;
+    }
 }
