@@ -38,7 +38,7 @@ nav ul li a {
     color: #69707D;
 }
 
-nav ul li a:active {
+nav ul li a:hover {
     border-bottom: 3px solid #FF7E1B;
     padding-bottom: 25px;
 }
