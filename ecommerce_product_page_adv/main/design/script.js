@@ -2,7 +2,9 @@ document.body.addEventListener('click', (e) => {
     if (e.target.tagName == 'IMG') {
         e.target.classList.add('active-avatar')
     } else {
-        document.querySelector('.avatar-image').classList.remove('active-avatar')
+        document.querySelector('.avatar-image').classList.remove('active-avatar');
+        document.querySelector('.my-cart').style.display = 'none';
+        isCartShown = false;
     }
 })
 
