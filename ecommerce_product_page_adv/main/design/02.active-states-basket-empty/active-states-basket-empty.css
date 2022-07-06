@@ -438,10 +438,10 @@ input[type=number] {
         padding: 30px;
         z-index: 1;
     }
-
+/* 
     .navs-container-ul {
         display: flex;
-    }
+    } */
 
     .navs-container-ul li {
         padding: 12px 0;
@@ -469,7 +469,7 @@ input[type=number] {
         z-index: -1;
     }
 
-    
+
     /* .image-wrapper {
         width: auto;
         height: 430px;
